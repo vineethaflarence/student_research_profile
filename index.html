@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <title>Student Template</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+       body{
+        background-color: white;
+       }
+        .nav-link{
+            color: #000000;
+            font-weight: 600;
+            font-size: 16px;
+            margin:5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+.dropdown-item{
+    white-space: normal;
+    font-size:14px;
+}
+.checkbox-type{
+    margin: 5px;
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="logo.png" class="logo"></a>
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
+                <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr>
+    
+    <div class="container container-mainscreen">
+        <h1 class="text-center header">Research Student Profile</h1>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="input-group mb-3" style="margin-top:50px;">
+                    <input type="text" class="form-control" placeholder="Search Research Profiles..." style="font-size: 20px;">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fa fa-search" style="font-size: 18px;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-3 col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-lg dropdown-toggle dropdown-button" type="button" id="departmentDropdown" data-toggle="dropdown" style="width:100%;">
+                                Departments
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="departmentDropdown" style="width:100%;">
+                                <label class="dropdown-item">
+                                    <input type="checkbox" class="checkbox-type" value="Computer Science">Computer Science
+                                </label>
+                                <label class="dropdown-item">
+                                    <input type="checkbox"  class="checkbox-type" value="Data SCience"> Data SCience
+                                </label>
+                                <label class="dropdown-item">
+                                    <input type="checkbox" class="checkbox-type" value="Education Health and Wellbeing">Education Health and Wellbeing
+                                </label>
+                                <label class="dropdown-item">
+                                    <input type="checkbox"  class="checkbox-type" value="CASE">CASE
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-9 col-xs-12">
+                <hr>
+                <div class="row">
+                    <div class="col-md-9 col-xs-12">
+                       <h2 class="name"><a href="screen2.html" target="_blank">Sachin Raja</a></h2>
+                        <p class="profile_info">I am in the last year of study for my PhD – The Actor as Rehabilitator (Director of Studies Professor Laura Caulfield). I am exploring actor training in the area of drama with people in prison.</p>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="Sachin_Raja.jpeg" class="img-fluid" alt="Sachin Raja">
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-9">
+                        <h2 class="name"><a href="#" target="_blank">Seshadri Mazumder</a></h2>
+                        <p class="profile_info">I am in the last year of study for my PhD – The Actor as Rehabilitator (Director of Studies Professor Laura Caulfield). I am exploring actor training in the area of drama with people in prison.</p> 
+                    </div>
+                    <div class="col-md-3">
+                      <img src="Seshadri_Mazumder.png" class="img-fluid" alt="Seshadri Mazumder">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
